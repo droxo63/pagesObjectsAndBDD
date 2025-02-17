@@ -1,0 +1,16 @@
+{
+  "name": "cy-bdd",
+  "version": "1.0.0",
+  "description": "Exemplo de BDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
+    "@cypress/webpack-preprocessor": "^6.0.2",
+    "cypress": "^14.0.3"
+  }
+}
