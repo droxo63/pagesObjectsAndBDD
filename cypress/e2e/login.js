@@ -9,9 +9,9 @@ Given ('que estou na página inicial', () => {
   cy.setCookie('ebacStoreVersion', 'v2', {domain: 'lojaebac.ebaconline.art.br'})
   cy.visit("/")    
 });
-  When('eu faço o login como usuario com usuario {string} e a senha {string}', (email, senha) => {
+  When('eu faço o login como ususario com {string} e {string}', (email, senha) => {
     cy.login(email, senha)
   });
-    Then('o usuario é logado com sucesso e seu email aparecer na pagina de perfil', () => { 
+    Then('o usuario é logado com sucesso e seu {string} aparece na pagina de perfil', (email) => { 
       cy.get('[data-testid="CustomerEmail"]').should('have.text', email)
     });

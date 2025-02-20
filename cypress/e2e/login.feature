@@ -4,7 +4,7 @@ Feature: Autenticação
 
         Given que estou na página inicial
         When eu faço o login como ususario com "<email>" e "<senha>"
-        Then o usuario é logado com sucesso e seu email aparecer na pagina de perfil
+        Then o usuario é logado com sucesso e seu "<email>" aparece na pagina de perfil
 
         Examples:
             | email             | senha  |
